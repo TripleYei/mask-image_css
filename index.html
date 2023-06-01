@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mask-image</title>
+</head>
+<body>
+	<img src="https://picsum.photos/200/300">
+	<img src="https://picsum.photos/200/301">
+	<img src="https://picsum.photos/200/302">
+	<img src="https://picsum.photos/200/300">
+	<img src="https://picsum.photos/200/301">
+	<img src="https://picsum.photos/200/300">
+	<img src="https://picsum.photos/200/301"> 
+	<img src="https://picsum.photos/200/300">
+	<img src="https://picsum.photos/200/301">
+	
+</body>
+
+<style>
+	body{
+		background: rgb(75,117,120);
+		background: linear-gradient(90deg, rgba(75,117,120,1) 0%, rgba(29,154,253,0.7847339619441527) 100%, rgba(69,252,204,1) 100%);
+	}
+	img{
+		
+		-webkit-mask-image: url("https://picsum.photos/200/301");
+		 mask-image: url("https://picsum.photos/200/301");
+		 -webkit-mask-repeat: no-repeat;
+		 mask-repeat: no-repeat;    
+		
+	}
+	img:hover{
+
+		border-bottom:25px solid yellow;
+	}
+</style>
+</html>
